@@ -5,7 +5,7 @@ import myPhoto from './assets/my.jpg';
 
 // 전체 레이아웃을 감싸는 컨테이너 박스 컴포넌트
 const Container = styled.div`
-  max-width: 800px;              // 최대 너비 제한
+  max-width: 1000px;              // 최대 너비 제한
   margin: 1rem auto;             // 상하 여백 + 좌우 가운데 정렬
   padding: 5rem;                 // 내부 여백
   background-color: #f9f9f9;     // 배경색 (연한 회색)
