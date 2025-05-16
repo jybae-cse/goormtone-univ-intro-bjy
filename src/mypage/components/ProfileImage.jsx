@@ -9,12 +9,7 @@ const Image = styled.img`
 
 function ProfileImage({src}) {
     return(
-       
-        
-         <Image src={src}  /> 
-      
-
-    );
+        <Image src={src}  />  );
 }
 
 export default ProfileImage;

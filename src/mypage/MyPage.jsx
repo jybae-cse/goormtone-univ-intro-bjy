@@ -1,5 +1,5 @@
 import styled from 'styled-components'; 
-import myImage from './assets/my.jpg';  // 'src/assets/my.jpg' 이미지 import
+import myImage from '../assets/my.jpg';  // 'src/assets/my.jpg' 이미지 import
 import {useState,useEffect} from 'react';
 import Information from './components/Information';
 import MyLink from './components/MyLink';
@@ -9,7 +9,7 @@ import ReactCounter from './components/ReactCounter';
 // 자기소개박스
 const Container = styled.div`
   width: 700px;
-  height: auto;
+  height: 500px;
   background-color: #FBFAFA;
   display: flex; 
   align-items: center;       // 세로 중앙 정렬(사진)
@@ -47,7 +47,7 @@ function App() {
     
   },[]);
   
-  const url = "https://myinfo5302.tistory.com/";
+  const url = "";
 
 
 
@@ -55,7 +55,7 @@ return (
     <Container>  
       <ProfileImage src={myImage}/>
       <TextContainer>
-        <Information name="배정연" department="의료IT공학과" studentId="20225522" interesting="프론트엔드 개발자 희망" skill="JS, JAVA, Python"/>
+        <Information name="배정연" department="" studentId="20225522" interesting="프론트엔드 개발자 희망" skill="JS, JAVA, Python"/>
         {url && <MyLink bloglink={url} />}
         <ReactCounter/>
      </TextContainer>
