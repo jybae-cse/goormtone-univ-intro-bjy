@@ -1,8 +1,12 @@
+import UserList from './UserList';
+import styled from 'styled-components';
+
 function Home() {
   return (
     <div style={{ textAlign: 'center', marginTop: '2rem' }}>
       <h3>당신의 하루를 짧게 기록해보세요</h3>
-      <p>위의 메뉴에서 일기를 작성하거나 볼 수 있어요.</p>
+      <p>사용자를 선택해서 일기장을 시작하세요.</p>
+      <UserList />
     </div>
   );
 }
