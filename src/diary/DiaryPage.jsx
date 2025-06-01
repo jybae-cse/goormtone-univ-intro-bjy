@@ -47,9 +47,9 @@ function DiaryPage() {
     <div style={{ textAlign: 'center', marginTop: '2rem' }}>
       <h2>{username}님의 일기장</h2>
       <NavBar>
-        <NavLink to="/">🏠 홈</NavLink>
-        <NavLink to="write">✍️ 일기 쓰기</NavLink>
-        <NavLink to="list">📘 내 일기 보기</NavLink>
+        <NavLink to="/">홈</NavLink>
+        <NavLink to="write">일기 쓰기</NavLink>
+        <NavLink to="list">내 일기 보기</NavLink>
       </NavBar>
       <Outlet context={{ diaryList, setDiaryList }} />
     </div>

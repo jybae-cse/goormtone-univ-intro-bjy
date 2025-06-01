@@ -12,6 +12,7 @@ function UserPage() {
         const res = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
         //  if (!res.ok) throw new Error('사용자 정보를 불러오지 못했습니다');
         const data = await res.json();
+        console.log(res,data);
         setUser(data);
       } catch (err) {
         setError(err.message);

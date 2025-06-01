@@ -18,7 +18,7 @@ function DiaryList() {
 
   const handleUpdate = (index) => {
     const updated = [...diaryList];
-    updated[index].content = editText;
+    updated[index].content = editText; //
     setDiaryList(updated);
     setEditIndex(null);
     setEditText('');
@@ -27,12 +27,14 @@ function DiaryList() {
   return (
     <div>
       <h3>내 일기 목록</h3>
+
+      {/* 일기목록보여주는연산자 */}
       {diaryList.length === 0 ? ( <p>작성된 일기가 없습니다.</p>) : 
         ( diaryList.map((diary, index) => (
            <div key={index} >
             <strong>{diary.date}</strong>
 
-
+{/* 수정과삭제를담당하는연산자 */}
             {editIndex === index ? (
               <>
                 <textarea rows="4" cols="50" value={editText} onChange={(e) => setEditText(e.target.value)}/>

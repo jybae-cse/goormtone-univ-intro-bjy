@@ -8,7 +8,7 @@ function WriteDiary() {
   const handleSubmit = () => {
     const today = new Date().toISOString().split('T')[0];
     const newDiary = { date: today, content: text };
-    setDiaryList(prev => [newDiary, ...prev]); // ✅ 추가
+    setDiaryList(prev => [newDiary, ...prev]); // 추가
     setText('');
   };
 

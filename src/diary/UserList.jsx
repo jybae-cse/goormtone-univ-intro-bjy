@@ -84,7 +84,7 @@ function UserList() {
 //   fetchUsers();
 // }, []);
 
-
+//검색
   const filteredUsers = users.filter(user => user.name.toLowerCase().includes(search.toLowerCase()) );
 
   return (
